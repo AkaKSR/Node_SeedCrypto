@@ -1,5 +1,4 @@
 <h1>Node_SeedCrypto - SEED-ECB Encrypt/Decrypt Module</h1>
-
 SEED-ECB Encrypt/Decrypt Module with Node.js
 
 [Install]
@@ -27,3 +26,14 @@ if (enc.flag) {
     console.log("Decrypt Data = ", dec.data);
 }
 ```
+
+
+
+[Function]
+
+```bash
+setKey(pharseKey): Set PharseKey Value(Max: 16 word);
+encrypt(text): Encrypt Text Data
+decrypt(text): Decrypt Text Data
+```
+
