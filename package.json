@@ -1,0 +1,33 @@
+{
+  "name": "node_seedcrypto",
+  "version": "1.0.0",
+  "description": "Node.js SEED-ECB Crypto Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node cryptTest.js"
+  },
+  "author": {
+    "name": "Harry Kim",
+    "email": "akaikarus@gmail.com"
+  },
+  "license": "GNU",
+  "keywords": [
+    "seed",
+    "seed-ecb",
+    "128",
+    "crypto",
+    "ecb"
+  ],
+  "homepage": "https://github.com/AkaKSR/Node_SeedCrypto",
+  "bugs": {
+    "url": "https://github.com/AkaKSR/Node_SeedCrypto/issues",
+    "email": "akaikarus@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AkaKSR/Node_SeedCrypto.git"
+  },
+  "engines": {
+    "node": ">= 0.6"
+  }
+}
