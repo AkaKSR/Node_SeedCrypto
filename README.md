@@ -1,19 +1,29 @@
-<h1>Node_SeedCrypto - SEED-ECB 방식 암호화 모듈</h1>
-- Node
+<h1>Node_SeedCrypto - SEED-ECB Encrypt/Decrypt Module</h1>
 
-  ```Javascript
-  const crypt = require('./lib/crypt/seedCrypt');
-  const pharseKey = "testkey" // 최대 16byte
-  
-  async function startApp() {
-      await crypt.setKey(pharseKey);
-      
-      var enc = crypt.encrypt("테스트");
-      
-      if (enc.flag) {
-          var dec = crypt.decrypt(enc.data);
-      }
-  }
-  ```
+SEED-ECB Encrypt/Decrypt Module with Node.js
 
-  
+[Install]
+
+```bash
+npm install --save node_seedcrypto
+```
+
+
+
+[Node]
+
+```Javascript
+const crypto = require('node-seedcrypto');
+
+crypto.setKey("pharseKey");
+
+var text = "Here your encrypt data";
+var enc = crypto.encrypt(text); // { flag: Boolean, data: String }
+
+if (enc.flag) {
+    var dec = crypto.decrypt(enc.data); // { flag: Boolean, data: String }
+    console.log("Original Data = ", text);
+    console.log("Encrypt Data = ", enc.data);
+    console.log("Decrypt Data = ", dec.data);
+}
+```

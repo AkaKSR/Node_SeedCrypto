@@ -1,6 +1,6 @@
 {
   "name": "node_seedcrypto",
-  "version": "0.1.3",
+  "version": "0.1.3a",
   "description": "Node.js SEED-ECB Crypto Module",
   "main": "index.js",
   "scripts": {
